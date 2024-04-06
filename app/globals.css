@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +31,51 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes swipe-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes swipe-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-swipe-out {
+  animation: swipe-out 0.4s ease-out forwards;
+}
+
+.animate-swipe-in {
+  animation: swipe-in 0.4s ease-out forwards;
+}
+
+main {
+  height: 100vh;
+  background-image: url("/Man.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#home .overlay {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, #00000000 80%, #000000 100%);
 }
