@@ -62,13 +62,16 @@ body {
 .animate-swipe-in {
   animation: swipe-in 0.4s ease-out forwards;
 }
-
 main {
   height: 100vh;
-  background-image: url("/Man.png");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
+}
+@media (min-width: 640px) {
+  main {
+    background-image: url("/Man.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 #home .overlay {

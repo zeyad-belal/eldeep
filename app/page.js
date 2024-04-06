@@ -10,11 +10,11 @@ export default function Home() {
         <Nav />
         <div
           id="home"
-          className="hero flex justify-between items-center h-[85vh] px-12 mx-6"
+          className="hero flex justify-between items-center h-[85vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6"
         >
-          <div className="flex flex-col gap-2 w-[50%]">
+          <div className="flex flex-col gap-2 w-full">
             <RotatingText />
-            <p className="text-6xl">with 3D Design.</p>
+            <p className="text-2xl md:text-4xl lg:text-6xl">with 3D Design.</p>
             <p className="flex items-center gap-4 mt-12 text-lg cursor-pointer hover:bg-white hover:bg-opacity-20 w-fit px-1 rounded py-2">
               {" "}
               <svg
@@ -70,12 +70,18 @@ export default function Home() {
         </div>
       </main>
       {/* ==========================================portfolio====================================================== */}
-      <div id="portfolio" className=" h-[70vh] px-12 mx-6 my-4">
+      <div
+        id="portfolio"
+        className=" h-[70vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6"
+      >
         <h2 className="text-xl mb-8"> PORTFOLIO:</h2>
         <MySwiper />
       </div>
       {/* ==========================================services====================================================== */}
-      <div id="services" className=" h-[80vh] px-12 mx-6 my-4">
+      <div
+        id="services"
+        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6"
+      >
         <h2 className="text-xl"> SERVICES:</h2>
         <h4 className="w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
           What I DO ?
@@ -116,9 +122,12 @@ export default function Home() {
         </ul>
       </div>
       {/* ==========================================about me====================================================== */}
-      <div id="about" className=" h-[80vh] px-12 mx-6">
+      <div
+        id="about"
+        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 my-12"
+      >
         <h2 className="text-xl mb-8"> ABOUT ME:</h2>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-wrap md:flex-nowrap items-center gap-8">
           <Image
             src={"/eldeep.jpg"}
             width={300}
@@ -135,8 +144,6 @@ export default function Home() {
               repudiandae quidem quod, magni magnam. <br></br> Lorem ipsum dolor
               sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo
               praesentium qui temporibus voluptatum, facilis aliquid eligendi
-              fugiat beatae neque inventore non. Laborum repellendus consequatur
-              ullam voluptatum asperiores.
             </p>
           </div>
         </div>
