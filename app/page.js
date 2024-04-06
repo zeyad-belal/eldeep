@@ -10,7 +10,7 @@ export default function Home() {
         <Nav />
         <div
           id="home"
-          className="hero flex justify-between items-center h-[80vh] px-12 mx-6"
+          className="hero flex justify-between items-center h-[85vh] px-12 mx-6"
         >
           <div className="flex flex-col gap-2 w-[50%]">
             <RotatingText />
@@ -69,17 +69,19 @@ export default function Home() {
           <div className="overlay"></div>
         </div>
       </main>
-      {/* ========================================================================================================= */}
-      <div id="portfolio" className=" h-[80vh] px-12 mx-6">
-        <h2 className="text-xl"> PORTFOLIO:</h2>
+      {/* ==========================================portfolio====================================================== */}
+      <div id="portfolio" className=" h-[70vh] px-12 mx-6 my-4">
+        <h2 className="text-xl mb-8"> PORTFOLIO:</h2>
         <MySwiper />
       </div>
-      {/* ========================================================================================================= */}
-      <div id="services" className=" h-[80vh] px-12 mx-6">
+      {/* ==========================================services====================================================== */}
+      <div id="services" className=" h-[80vh] px-12 mx-6 my-4">
         <h2 className="text-xl"> SERVICES:</h2>
-        <h4 className="w-fit mx-auto text-xl tracking-widest">What I DO ?</h4>
-        <ul className="w-full flex justify-around items-center py-12 px-6">
-          <li className="text-lg flex- justify-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff53] px-16 py-6  rounded hover:scale-[1.04] cursor-pointer">
+        <h4 className="w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
+          What I DO ?
+        </h4>
+        <ul className="w-full grid grid-cols-4 gap-4 justify-around items-center py-12 px-6">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">UI/UX</p>
             <Image
               src={"/services/crown-minimalistic-svgrepo-com.svg"}
@@ -87,7 +89,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg flex- justify-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff53] px-16 py-6  rounded hover:scale-[1.04] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">Web Design</p>
             <Image
               src={"/services/screen-desktop-svgrepo-com.svg"}
@@ -95,7 +97,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg flex- justify-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff53] px-16 py-6  rounded hover:scale-[1.04] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">App Design</p>
             <Image
               src={"/services/mobile-svgrepo-com.svg"}
@@ -103,7 +105,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg flex- justify-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff53] px-16 py-6  rounded hover:scale-[1.04] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">SEO </p>
             <Image
               src={"/services/stats-1368-svgrepo-com.svg"}
@@ -112,6 +114,32 @@ export default function Home() {
             />
           </li>
         </ul>
+      </div>
+      {/* ==========================================about me====================================================== */}
+      <div id="about" className=" h-[80vh] px-12 mx-6">
+        <h2 className="text-xl mb-8"> ABOUT ME:</h2>
+        <div className="flex items-center gap-8">
+          <Image
+            src={"/eldeep.jpg"}
+            width={300}
+            height={100}
+            className="rounded-lg shadow-lg shadow-[#ffffff4e]"
+          />
+          <div>
+            <h4>ZIAD ELDEEP</h4>
+            <h6 className="font-thin mb-4">3D Desginer</h6>
+            <p className="max-w-[70%] tracking-wide">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus
+              delectus totam sed aliquam sequi praesentium mollitia, illum
+              repudiandae quidem quod, magni magnam. <br></br> Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo
+              praesentium qui temporibus voluptatum, facilis aliquid eligendi
+              fugiat beatae neque inventore non. Laborum repellendus consequatur
+              ullam voluptatum asperiores.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
