@@ -72,7 +72,7 @@ export default function Home() {
       {/* ==========================================portfolio====================================================== */}
       <div
         id="portfolio"
-        className=" h-[70vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6"
+        className="  min-h-[700px] sm:min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
       >
         <h2 className="text-xl mb-8"> PORTFOLIO:</h2>
         <MySwiper />
@@ -80,10 +80,10 @@ export default function Home() {
       {/* ==========================================services====================================================== */}
       <div
         id="services"
-        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6"
+        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
       >
-        <h2 className="text-xl"> SERVICES:</h2>
-        <h4 className="w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
+        <h2 className="text-xl self-start"> SERVICES:</h2>
+        <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
           What I DO ?
         </h4>
         <ul className="w-full grid grid-cols-4 gap-4 justify-around items-center py-12 px-6">

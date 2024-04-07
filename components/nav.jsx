@@ -13,10 +13,10 @@ const Nav = () => {
 
   return (
     <nav className=" px-3 md:px-6 lg:px-12  bg-transparent bg-opacity-0 text-white ">
-      <div className="flex items-center justify-between pb-3  border-b border-white border-opacity-20 mx-auto w-[95%]">
+      <div className="flex items-center justify-between pb-1  border-b border-white border-opacity-20 mx-auto w-[95%]">
         <div className="flex items-center py-2 max-w-[40px] md:max-w-[60px]">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={60} height={50} />
+            <Image src="/logo.png" alt="Logo" width={53} height={50} />
           </Link>
         </div>
         <ul className="hidden md:flex space-x-12 ">

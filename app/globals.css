@@ -82,3 +82,18 @@ main {
   right: 0;
   background-image: linear-gradient(180deg, #00000000 80%, #000000 100%);
 }
+
+.gradient-background {
+  background-image: linear-gradient(to right, #3166ff, #77eeff);
+  font-weight: 500;
+  color: white;
+  opacity: 90%;
+}
+
+.heading-gradient {
+  background: linear-gradient(180deg, #3166ff, #77eeff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline; /* or inline-block */
+}
