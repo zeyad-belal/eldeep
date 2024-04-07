@@ -1,9 +1,47 @@
+"use client";
+
+import Modal from "@/components/Modal";
 import Nav from "@/components/nav";
 import RotatingText from "@/components/rotatingText";
 import MySwiper from "@/components/swiper";
 import Image from "next/image";
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const videos = [
+    {
+      src: "/productDesign/animations/product animation/0001-0600.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/book animation.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/bottle 3d animation.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/Micropthone - maono.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/perfume animation suavage.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/PRODUCT DESIGN - PHONE.mp4",
+      type: "video/mp4",
+    },
+    {
+      src: "/productDesign/animations/product animation/Skillet.mp4",
+      type: "video/mp4",
+    },
+  ];
+
   return (
     <>
       <main id="heroSec">
@@ -15,8 +53,10 @@ export default function Home() {
           <div className="flex flex-col gap-2 w-full">
             <RotatingText />
             <p className="text-2xl md:text-4xl lg:text-6xl">with 3D Design.</p>
-            <p className="flex items-center gap-4 mt-12 text-lg cursor-pointer hover:bg-white hover:bg-opacity-20 w-fit px-1 rounded py-2">
-              {" "}
+            <p
+              className="flex items-center gap-4 mt-12 text-lg cursor-pointer hover:bg-white hover:bg-opacity-20 w-fit px-1 rounded py-2"
+              onClick={() => setModalOpen(true)}
+            >
               <svg
                 width="25"
                 height="20"
@@ -28,6 +68,32 @@ export default function Home() {
               </svg>
               Check out my work
             </p>
+
+            {modalOpen && (
+              <div className="!w-full !h-full bg-white ">
+                <div
+                  className="mt-4 max-w-[80%] max-h-[70%] z-30 fixed inset-0 mx-auto"
+                  onClose={() => setModalOpen(false)}
+                >
+                  <Swiper
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    {videos.map((video, index) => (
+                      <SwiperSlide key={index}>
+                        <video controls width="100%">
+                          <source src={video.src} type={video.type} />
+                          Your browser does not support the video tag.
+                        </video>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            )}
+
             <p className="mt-12 max-w-[300px] text-lg tracking-wider font-thin">
               High-Quality 3D Renders and animations for your brand.
             </p>
