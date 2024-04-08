@@ -52,7 +52,7 @@ export default function Home() {
         >
           <div className="flex flex-col gap-2 w-full">
             <RotatingText />
-            <p className="text-2xl md:text-4xl lg:text-6xl">with 3D Design.</p>
+            <p className="text-3xl md:text-4xl lg:text-6xl ">with 3D Design.</p>
             <p
               className="flex items-center gap-4 mt-12 text-lg cursor-pointer hover:bg-white hover:bg-opacity-20 w-fit px-1 rounded py-2"
               onClick={() => setModalOpen(true)}
@@ -138,7 +138,7 @@ export default function Home() {
       {/* ==========================================portfolio====================================================== */}
       <div
         id="portfolio"
-        className="  min-h-[700px] sm:min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
+        className="  min-h-[450px]  px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
       >
         <h2 className="text-xl mb-8"> PORTFOLIO:</h2>
         <MySwiper />
@@ -146,7 +146,7 @@ export default function Home() {
       {/* ==========================================services====================================================== */}
       <div
         id="services"
-        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
+        className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
       >
         <h2 className="text-xl self-start"> SERVICES:</h2>
         <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
@@ -190,20 +190,22 @@ export default function Home() {
       {/* ==========================================about me====================================================== */}
       <div
         id="about"
-        className=" h-[80vh] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 my-12"
+        className="h-[80vh] min-h-[450px] mt-6 sm:mt-0 flex flex-col items-center justify-center px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
       >
-        <h2 className="text-xl mb-8"> ABOUT ME:</h2>
-        <div className="flex flex-wrap md:flex-nowrap items-center gap-8">
-          <Image
-            src={"/eldeep.jpg"}
-            width={300}
-            height={100}
-            className="rounded-lg shadow-lg shadow-[#ffffff4e]"
-          />
+        <h2 className="text-xl mb-8 self-start mx-6"> ABOUT ME:</h2>
+        <div className="flex flex-wrap md:flex-nowrap items-center gap-8 mx-6">
+          <div className="max-w-[200px] md:max-w-[600px] h-fit ">
+            <Image
+              src={"/eldeep.jpg"}
+              width={600}
+              height={600}
+              className="rounded-lg shadow-lg shadow-[#ffffff4e]"
+            />
+          </div>
           <div>
-            <h4>ZIAD ELDEEP</h4>
+            <h4 className="tracking-widest">ZIAD ELDEEP</h4>
             <h6 className="font-thin mb-4">3D Desginer</h6>
-            <p className="max-w-[70%] tracking-wide">
+            <p className="sm:max-w-[70%] w-full tracking-wider text-gray-300 text-sm sm:text-md">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus
               delectus totam sed aliquam sequi praesentium mollitia, illum
