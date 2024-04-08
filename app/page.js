@@ -7,6 +7,8 @@ import MySwiper from "@/components/swiper";
 import Image from "next/image";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -70,14 +72,17 @@ export default function Home() {
             </p>
 
             {modalOpen && (
-              <div className="!w-full !h-full bg-white ">
+              <div className="relative !w-full !h-full bg-white">
                 <div
-                  className="mt-4 max-w-[80%] max-h-[70%] z-30 fixed inset-0 mx-auto"
+                  className="mt-[5%] max-w-[80%] max-h-[70%] z-30 fixed inset-0 mx-auto"
                   onClose={() => setModalOpen(false)}
                 >
+                  <div className="self-end cursor-pointer font-bold text-lg " onClick={() => setModalOpen(false)}>X</div>
                   <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
                     onSlideChange={() => console.log("slide change")}
                     onSwiper={(swiper) => console.log(swiper)}
                   >
