@@ -58,7 +58,7 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          <div className="w-full">
+          <div className="w-full px-12 md:px-4 mt-8 ms:mt-0 ">
             <div className="flex flex-col text-left">
 
               <div className="flex flex-col gap-6 ">
