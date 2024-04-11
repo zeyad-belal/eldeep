@@ -74,6 +74,15 @@ main {
   }
 }
 
+@media (max-width: 641px) {
+  main {
+    background-image: url("/bgsmallSc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 #home .overlay {
   position: absolute;
   height: 20%;

@@ -253,7 +253,40 @@ export default function Home() {
       <SecDivider />
       <Contact />
       <SecDivider />
-
+      <ul className="flex  justify-center items-center gap-6 my-3">
+            <a
+              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+              href="https://wa.me/+971581202186"
+            >
+              <Image
+                src={"/social/whatsapp-svgrepo-com.svg"}
+                width={25}
+                height={25}
+              />
+            </a>
+            <a
+              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+              href="https://www.linkedin.com/in/ziad-eldeeb/"
+            >
+              {" "}
+              <Image
+                src={"/social/linkedin-svgrepo-com.svg"}
+                width={35}
+                height={35}
+              />
+            </a>
+            <a
+              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+              href="https://t.me/zeldeeb33"
+            >
+              {" "}
+              <Image
+                src={"/social/telegram-svgrepo-com.svg"}
+                width={35}
+                height={35}
+              />
+            </a>
+          </ul>
     </>
   );
 }
