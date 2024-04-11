@@ -4,8 +4,10 @@ export default function Contact() {
   return (
     <>
       <div className=" overflow-hidden min-h-[450px] justify-center mx-auto  px-3 md:px-6 lg:px-12 lg:mx-6 mt-6">
-        <h2 className="text-xl mb-8 px-8"> CONTACT ME: </h2>
-        <div className="flex flex-wrap justify-center text-start px-9">
+        <div className="px-8">
+
+        <h2 className="text-xl mb-8 "> CONTACT ME: </h2>
+        <div className="flex flex-wrap justify-center text-start ">
                 <div className="w-full flex flex-col justify-start mb-6 text-gray-500">
                   <h2 className="text-2xl font-semibold">Available 24/7</h2>
                   <p className="text-md leading-relaxed ">Get In Touch</p>
@@ -28,7 +30,7 @@ export default function Contact() {
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="email"
                     type="email"
-                    placeholder="you@example.com"
+                    placeholder="your email"
                   />
                 </div>
               </div>
@@ -43,6 +45,7 @@ export default function Contact() {
                   <textarea
                     className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                     id="message"
+                    placeholder="your message"
                   ></textarea>
                 </div>
               </div>
@@ -58,20 +61,21 @@ export default function Contact() {
           <div className="w-full">
             <div className="flex flex-col text-left">
 
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-6 ">
 
-              <p>
+              <p className="border-b border-white border-opacity-25 pb-6">
                 <strong className="text-gray-400">Location:</strong> Dubai, United Emirates
               </p>
-              <p>
+              <p className="border-b border-white border-opacity-25 pb-6">
                 <strong className="text-gray-400">Phone Number:</strong> +971581202186
               </p>
-              <p>
+              <p className="">
                 <strong className="text-gray-400">Email Address:</strong> ziadeldeeb33@gmail.com
               </p>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>
