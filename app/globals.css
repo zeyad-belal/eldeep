@@ -97,3 +97,9 @@ main {
   color: transparent;
   display: inline; /* or inline-block */
 }
+
+
+.sec-divider {
+  background: linear-gradient(90deg, #000000, #ffffff73, #000000);
+
+}

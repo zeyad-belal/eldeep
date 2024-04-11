@@ -7,8 +7,10 @@ import MySwiper from "@/components/swiper";
 import Image from "next/image";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Contact from "@/components/contact";
+import SecDivider from "@/components/SecDivider";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -77,7 +79,12 @@ export default function Home() {
                   className="mt-[5%] max-w-[80%] max-h-[70%] z-30 fixed inset-0 mx-auto"
                   onClose={() => setModalOpen(false)}
                 >
-                  <div className="self-end cursor-pointer font-bold text-lg " onClick={() => setModalOpen(false)}>X</div>
+                  <div
+                    className="self-end cursor-pointer font-bold text-lg "
+                    onClick={() => setModalOpen(false)}
+                  >
+                    X
+                  </div>
                   <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
@@ -141,14 +148,33 @@ export default function Home() {
         </div>
       </main>
       {/* ==========================================portfolio====================================================== */}
-      <div
-        id="portfolio"
-        className="  min-h-[450px]  px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
-      >
-        <h2 className="text-xl mb-8"> PORTFOLIO:</h2>
+      <SecDivider />
+
+      <div id="portfolio" className="px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 ">
+        <div className="flex justify-between items center w-full mb-8">
+          {" "}
+          <h2 className="text-xl "> PORTFOLIO:</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </div>
         <MySwiper />
       </div>
       {/* ==========================================services====================================================== */}
+      <SecDivider />
+
       <div
         id="services"
         className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
@@ -158,7 +184,7 @@ export default function Home() {
           What I DO ?
         </h4>
         <ul className="w-full grid grid-cols-4 gap-4 justify-around items-center py-12 px-6">
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">UI/UX</p>
             <Image
               src={"/services/crown-minimalistic-svgrepo-com.svg"}
@@ -166,7 +192,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">Web Design</p>
             <Image
               src={"/services/screen-desktop-svgrepo-com.svg"}
@@ -174,7 +200,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">App Design</p>
             <Image
               src={"/services/mobile-svgrepo-com.svg"}
@@ -182,7 +208,7 @@ export default function Home() {
               height={100}
             />
           </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-lg shadow-[#ffffff39] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto w-fit mb-3">SEO </p>
             <Image
               src={"/services/stats-1368-svgrepo-com.svg"}
@@ -193,9 +219,11 @@ export default function Home() {
         </ul>
       </div>
       {/* ==========================================about me====================================================== */}
+      <SecDivider />
+
       <div
         id="about"
-        className="h-[80vh] min-h-[450px] mt-6 sm:mt-0 flex flex-col items-center justify-center px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
+        className="  my-6 sm:mt-0 flex flex-col items-center justify-center px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 "
       >
         <h2 className="text-xl mb-8 self-start mx-6"> ABOUT ME:</h2>
         <div className="flex flex-wrap md:flex-nowrap items-center gap-8 mx-6">
@@ -221,6 +249,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* ==========================================about me====================================================== */}
+      <SecDivider />
+      <Contact />
+      <SecDivider />
+
     </>
   );
 }
