@@ -28,11 +28,11 @@ const RotatingText = () => {
   }, [phrases]);
 
   return (
-    <h1 className="text-4xl md:text-5xl lg:text-7xl h-12 lg:h-20 w-full font-bold relative overflow-hidden">
+    <h1 className="text-4xl md:text-5xl lg:text-7xl h-12 lg:h-20 w-full font-bold relative overflow-hidden min-w-[300px]">
       {phrases.map((phrase, index) => (
         <span
           key={index}
-          className={`absolute top-0 w-full !break-keep heading-gradient ${
+          className={`absolute top-0 w-full !break-keep  heading-gradient ${
             index === currentPhraseIndex && !isAnimatingOut
               ? "animate-swipe-in"
               : "animate-swipe-out"
