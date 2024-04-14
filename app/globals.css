@@ -65,23 +65,23 @@ body {
 main {
   height: 100vh;
 }
-@media (min-width: 640px) {
+/* @media (min-width: 640px) { */
   main {
-    background-image: url("/Man.png");
-    background-position: right;
-    background-size: contain;
+    background-image: url("/blob-scene-haikei.svg");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
-}
+/* } */
 
-@media (max-width: 641px) {
+/* @media (max-width: 641px) {
   main {
     background-image: url("/bgsmallSc.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-}
+} */
 
 #home .overlay {
   position: absolute;

@@ -144,7 +144,7 @@ export default function Home() {
               />
             </a>
           </ul>
-          <div className="overlay"></div>
+          {/* <div className="overlay"></div> */}
         </div>
       </main>
       {/* ==========================================portfolio====================================================== */}
@@ -185,36 +185,100 @@ export default function Home() {
         </h4>
         <ul className="w-full grid grid-cols-4 gap-4 justify-around items-center py-12 px-6">
           <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto w-fit mb-3">UI/UX</p>
-            <Image
-              src={"/services/crown-minimalistic-svgrepo-com.svg"}
-              width={100}
-              height={100}
-            />
+            <p className="mx-auto font-semibold w-fit mb-3">CGI</p>
+            <div className="max-w-[300px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-earth"
+              >
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                <path d="M7 3.34V5a3 3 0 0 0 3 3v0a2 2 0 0 1 2 2v0c0 1.1.9 2 2 2v0a2 2 0 0 0 2-2v0c0-1.1.9-2 2-2h3.17" />
+                <path d="M11 21.95V18a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
           </li>
           <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto w-fit mb-3">Web Design</p>
-            <Image
-              src={"/services/screen-desktop-svgrepo-com.svg"}
-              width={100}
-              height={100}
-            />
+            <p className="mx-auto font-semibold w-fit mb-3">Product </p>
+            <div className="max-w-[300px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-package-search"
+              >
+                <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" />
+                <path d="m7.5 4.27 9 5.15" />
+                <polyline points="3.29 7 12 12 20.71 7" />
+                <line x1="12" x2="12" y1="22" y2="12" />
+                <circle cx="18.5" cy="15.5" r="2.5" />
+                <path d="M20.27 17.27 22 19" />
+              </svg>
+            </div>
           </li>
           <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto w-fit mb-3">App Design</p>
-            <Image
-              src={"/services/mobile-svgrepo-com.svg"}
-              width={100}
-              height={100}
-            />
+            <p className="mx-auto font-semibold w-fit mb-3">Renders </p>
+            <div className="max-w-[300px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-cloud-cog"
+              >
+                <circle cx="12" cy="17" r="3" />
+                <path d="M4.2 15.1A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.2" />
+                <path d="m15.7 18.4-.9-.3" />
+                <path d="m9.2 15.9-.9-.3" />
+                <path d="m10.6 20.7.3-.9" />
+                <path d="m13.1 14.2.3-.9" />
+                <path d="m13.6 20.7-.4-1" />
+                <path d="m10.8 14.3-.4-1" />
+                <path d="m8.3 18.6 1-.4" />
+                <path d="m14.7 15.8 1-.4" />
+              </svg>
+            </div>
           </li>
           <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto w-fit mb-3">SEO </p>
-            <Image
-              src={"/services/stats-1368-svgrepo-com.svg"}
-              width={100}
-              height={100}
-            />
+            <p className="mx-auto font-semibold w-fit mb-3">3D animation </p>
+            <div className="max-w-[300px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-box"
+                className="max-w-full"
+              >
+                <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                <path d="m3.3 7 8.7 5 8.7-5" />
+                <path d="M12 22V12" />
+              </svg>
+            </div>
           </li>
         </ul>
       </div>
@@ -236,15 +300,27 @@ export default function Home() {
             />
           </div>
           <div>
-            <h4 className="tracking-widest">ZIAD ELDEEP</h4>
+            <h4 className="tracking-widest">ZIAD ELDEEB</h4>
             <h6 className="font-thin mb-4">3D Desginer</h6>
-            <p className="sm:max-w-[70%] w-full tracking-wider text-gray-300 text-sm sm:text-md">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus
-              delectus totam sed aliquam sequi praesentium mollitia, illum
-              repudiandae quidem quod, magni magnam. <br></br> Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo
-              praesentium qui temporibus voluptatum, facilis aliquid eligendi
+            <p className="sm:max-w-[70%] w-full tracking-wider leading-6	 text-gray-300 text-sm sm:text-md">
+              Hey there! I'm Ziad Eldeeb, also known as Zee. <br></br> Welcome
+              to Deeb3DStudio, your hub for immersive visual experiences.
+              <br></br>
+              <br></br> My journey into the realm of design began during my
+              academic years, where I honed my skills in graphic design, laying
+              the foundation for my ventures into the world of 3D.
+              <br></br>
+              Specializing in 3D designs, renders, product visualization, CGI,
+              and VFX, I'm passionate about bringing concepts to life in
+              stunning detail. Whether it's crafting lifelike product renders,
+              creating jaw-dropping CGI scenes, or adding that extra touch of
+              magic with VFX,
+              <br></br> I thrive on pushing the boundaries of visual
+              storytelling. Let's collaborate to turn your ideas into
+              captivating 3D realities.
+              <br></br>
+              <br></br> Let's connect and turn your vision into breathtaking 3D
+              imagery!
             </p>
           </div>
         </div>
@@ -254,39 +330,39 @@ export default function Home() {
       <Contact />
       <SecDivider />
       <ul className="flex  justify-center items-center gap-6 my-3">
-            <a
-              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
-              href="https://wa.me/+971581202186"
-            >
-              <Image
-                src={"/social/whatsapp-svgrepo-com.svg"}
-                width={25}
-                height={25}
-              />
-            </a>
-            <a
-              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
-              href="https://www.linkedin.com/in/ziad-eldeeb/"
-            >
-              {" "}
-              <Image
-                src={"/social/linkedin-svgrepo-com.svg"}
-                width={35}
-                height={35}
-              />
-            </a>
-            <a
-              className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
-              href="https://t.me/zeldeeb33"
-            >
-              {" "}
-              <Image
-                src={"/social/telegram-svgrepo-com.svg"}
-                width={35}
-                height={35}
-              />
-            </a>
-          </ul>
+        <a
+          className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+          href="https://wa.me/+971581202186"
+        >
+          <Image
+            src={"/social/whatsapp-svgrepo-com.svg"}
+            width={25}
+            height={25}
+          />
+        </a>
+        <a
+          className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+          href="https://www.linkedin.com/in/ziad-eldeeb/"
+        >
+          {" "}
+          <Image
+            src={"/social/linkedin-svgrepo-com.svg"}
+            width={35}
+            height={35}
+          />
+        </a>
+        <a
+          className="cursor-pointer hover:bg-white hover:bg-opacity-20 rounded-full"
+          href="https://t.me/zeldeeb33"
+        >
+          {" "}
+          <Image
+            src={"/social/telegram-svgrepo-com.svg"}
+            width={35}
+            height={35}
+          />
+        </a>
+      </ul>
     </>
   );
 }
