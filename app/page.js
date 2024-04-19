@@ -147,31 +147,6 @@ export default function Home() {
           {/* <div className="overlay"></div> */}
         </div>
       </main>
-      {/* ==========================================portfolio====================================================== */}
-      <SecDivider />
-
-      <div id="portfolio" className="px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 ">
-        <div className="flex justify-between items center w-full mb-8">
-          {" "}
-          <h2 className="text-xl "> PORTFOLIO:</h2>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-move-right"
-          >
-            <path d="M18 8L22 12L18 16" />
-            <path d="M2 12H22" />
-          </svg>
-        </div>
-        <MySwiper />
-      </div>
       {/* ==========================================services====================================================== */}
       <SecDivider />
 
@@ -183,8 +158,8 @@ export default function Home() {
         <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mt-4">
           What I DO ?
         </h4>
-        <ul className="w-full grid grid-cols-4 gap-4 justify-around items-center py-12 px-6">
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+        <ul className="w-full flex md:flex-nowrap flex-wrap gap-4 justify-around items-center py-12 px-4 sm:px-6">
+          <li className="text-lg min-w-[240px]  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6   rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto font-semibold w-fit mb-3">CGI</p>
             <div className="max-w-[300px]">
               <svg
@@ -206,32 +181,10 @@ export default function Home() {
               </svg>
             </div>
           </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto font-semibold w-fit mb-3">Product </p>
-            <div className="max-w-[300px]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-package-search"
-              >
-                <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" />
-                <path d="m7.5 4.27 9 5.15" />
-                <polyline points="3.29 7 12 12 20.71 7" />
-                <line x1="12" x2="12" y1="22" y2="12" />
-                <circle cx="18.5" cy="15.5" r="2.5" />
-                <path d="M20.27 17.27 22 19" />
-              </svg>
-            </div>
-          </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
-            <p className="mx-auto font-semibold w-fit mb-3">Renders </p>
+          <li className="text-lg min-w-[240px]   flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6   rounded hover:scale-[1.02] cursor-pointer">
+            <p className="mx-auto font-semibold min-w-[146px] w-fit mb-3">
+              Product Renders{" "}
+            </p>
             <div className="max-w-[300px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +211,7 @@ export default function Home() {
               </svg>
             </div>
           </li>
-          <li className="text-lg lg:col-span-1 sm:col-span-2 col-span-4  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6  min-w-[24%]  rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg min-w-[240px]   flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6   rounded hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto font-semibold w-fit mb-3">3D animation </p>
             <div className="max-w-[300px]">
               <svg
@@ -279,6 +232,61 @@ export default function Home() {
                 <path d="M12 22V12" />
               </svg>
             </div>
+          </li>
+        </ul>
+      </div>
+      {/* ==========================================portfolio====================================================== */}
+      <SecDivider />
+
+      <div id="portfolio" className="px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 py-8">
+        <div className="flex justify-between items center w-full mb-8">
+          {" "}
+          <h2 className="text-xl "> PORTFOLIO:</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </div>
+        <MySwiper />
+      </div>
+
+      {/* ==========================================experince====================================================== */}
+      <SecDivider />
+
+      <div
+        id="experince"
+        className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
+      >
+        <h2 className="text-xl self-start uppercase"> experince:</h2>
+        <ul className="w-full flex md:flex-nowrap flex-wrap gap-6 justify-around items-center py-12 px-4 sm:px-6">
+          <li className="flex flex-col  justify-center items-center gap-4 text-sm sm:text-lg px-6 py-4">
+            <p className="mx-auto font-semibold w-fit mb-3 text-4xl sm:text-6xl lg:text-7xl">
+              +50{" "}
+            </p>
+            <p className="max-w-[300px]">Finished Projects</p>
+          </li>
+          <li className=" flex flex-col  justify-center items-center gap-4 text-sm sm:text-lg px-6 py-4">
+            <p className="mx-auto font-semibold w-fit mb-3 text-4xl sm:text-6xl lg:text-7xl">
+              +1000{" "}
+            </p>
+            <p className="max-w-[300px]">Hours in Blender</p>
+          </li>
+          <li className=" flex flex-col  justify-center items-center gap-2 text-sm sm:text-lg px-6 py-4">
+            <p className="mx-auto font-semibold w-fit mb-3 text-4xl sm:text-6xl lg:text-7xl">
+              3{" "}
+            </p>
+            <p className="max-w-[300px]">Years of Experince</p>
           </li>
         </ul>
       </div>
