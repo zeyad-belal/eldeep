@@ -238,7 +238,7 @@ export default function Home() {
       {/* ==========================================portfolio====================================================== */}
       <SecDivider />
 
-      <div id="portfolio" className="px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 py-8">
+      <div id="portfolio" className="px-3 md:px-6 lg:px-12 mx-2 lg:mx-6">
         <div className="flex justify-between items center w-full mb-8">
           {" "}
           <h2 className="text-xl "> PORTFOLIO:</h2>

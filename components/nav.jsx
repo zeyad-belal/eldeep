@@ -62,7 +62,7 @@ const Nav = () => {
           </button>
           {/* Mobile Panel */}
           {isMobileMenuOpen && (
-            <div className=" absolute right-0 top-12 mt-2 w-48 bg-black text-white rounded-md border py-2  border-white">
+            <div className=" absolute right-0 top-12 mt-2 w-48 bg-black text-white rounded-sm border py-2  border-white border-opacity-30">
               <ul className="py-2 px-4 space-y-4">
                 <li>
                   <Link href="#heroSec" className="hover:text-gray-300">
