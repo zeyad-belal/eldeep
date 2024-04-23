@@ -1,12 +1,10 @@
 "use client";
 
-import Modal from "@/components/Modal";
 import Nav from "@/components/nav";
 import RotatingText from "@/components/rotatingText";
 import MySwiper from "@/components/swiper";
 import Image from "next/image";
 import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Contact from "@/components/contact";
@@ -15,36 +13,6 @@ import SecDivider from "@/components/SecDivider";
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const videos = [
-    {
-      src: "/productDesign/animations/product animation/0001-0600.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/book animation.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/bottle 3d animation.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/Micropthone - maono.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/perfume animation suavage.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/PRODUCT DESIGN - PHONE.mp4",
-      type: "video/mp4",
-    },
-    {
-      src: "/productDesign/animations/product animation/Skillet.mp4",
-      type: "video/mp4",
-    },
-  ];
 
   return (
     <>
