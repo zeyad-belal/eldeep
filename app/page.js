@@ -59,7 +59,7 @@ export default function Home() {
                   <video
                     width="1000"
                     height="1000"
-                    className="max-w-[90%] max-h-[90%] mx-auto"
+                    className="max-w-[95%] md:max-w-[90%] max-h-[95%] md:max-h-[90%] mx-auto"
                     controls
                     autoPlay
                   >
