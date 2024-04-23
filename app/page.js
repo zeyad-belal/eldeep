@@ -74,34 +74,30 @@ export default function Home() {
             </p>
 
             {modalOpen && (
-              <div className="relative !w-full !h-full bg-white">
+              <div
+                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60"
+                onClick={() => setModalOpen(false)} // Click handler to close the modal when the background is clicked
+              >
                 <div
-                  className="mt-[5%] max-w-[80%] max-h-[70%] z-30 fixed inset-0 mx-auto"
-                  onClose={() => setModalOpen(false)}
+                  className="relative max-w-[80%] max-h-[70%] z-30"
+                  onClick={(e) => e.stopPropagation()} // Prevents the click on the modal from propagating to the background
                 >
                   <div
-                    className="self-end cursor-pointer font-bold text-lg "
+                    className="absolute top-0 right-0 cursor-pointer font-bold text-lg p-2"
                     onClick={() => setModalOpen(false)}
                   >
                     X
                   </div>
-                  <Swiper
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    navigation
-                    pagination={{ clickable: true }}
-                    onSlideChange={() => console.log("slide change")}
-                    onSwiper={(swiper) => console.log(swiper)}
+                  <video
+                    width="1000"
+                    height="1000"
+                    className="max-w-[90%] max-h-[90%] mx-auto"
+                    controls
+                    autoPlay
                   >
-                    {videos.map((video, index) => (
-                      <SwiperSlide key={index}>
-                        <video controls width="100%">
-                          <source src={video.src} type={video.type} />
-                          Your browser does not support the video tag.
-                        </video>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
+                    <source src="promo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             )}
