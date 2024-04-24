@@ -202,7 +202,7 @@ export default function Home() {
       <SecDivider />
       <div
         id="services"
-        className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
+        className="  min-h-[250px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
       >
         <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mb-4 ">
           Quick Look ?
