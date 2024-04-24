@@ -13,7 +13,6 @@ import SecDivider from "@/components/SecDivider";
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
 
-
   return (
     <>
       <main id="heroSec">
@@ -123,7 +122,7 @@ export default function Home() {
           What I DO ?
         </h4>
         <ul className="w-full flex md:flex-nowrap flex-wrap gap-4 justify-around items-center py-12 px-4 sm:px-6">
-          <li className="text-lg min-w-[240px]  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6   rounded hover:scale-[1.02] cursor-pointer">
+          <li className="text-lg min-w-[240px]  flex flex-col  justify-center items-center gap-4 border border-white border-opacity-10 shadow-md shadow-[#ffffff22] px-12 py-6   rounded-lg hover:scale-[1.02] cursor-pointer">
             <p className="mx-auto font-semibold w-fit mb-3">CGI</p>
             <div className="max-w-[300px]">
               <svg
@@ -198,6 +197,26 @@ export default function Home() {
             </div>
           </li>
         </ul>
+      </div>
+      {/* ==========================================Summaryy Video====================================================== */}
+      <SecDivider />
+      <div
+        id="services"
+        className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
+      >
+        <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mb-4 ">
+          Quick Look ?
+        </h4>
+        <video
+          width="1000"
+          height="1000"
+          className="max-w-[95%] md:max-w-[90%] max-h-[95%] md:max-h-[90%] mx-auto rounded-lg shadow-[#77edff5a] shadow-lg  "
+          controls
+          autoPlay
+        >
+          <source src="summary.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       {/* ==========================================portfolio====================================================== */}
       <SecDivider />
