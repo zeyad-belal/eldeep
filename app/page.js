@@ -211,7 +211,7 @@ export default function Home() {
           width="1000"
           height="1000"
           className="max-w-[95%] md:max-w-[90%] max-h-[95%] md:max-h-[90%] mx-auto rounded-lg shadow-[#77edff5a] shadow-lg  "
-          controls
+          muted
           autoPlay
         >
           <source src="summary.mp4" type="video/mp4" />
