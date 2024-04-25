@@ -213,6 +213,7 @@ export default function Home() {
           className="max-w-[95%] md:max-w-[90%] max-h-[95%] md:max-h-[90%] mx-auto rounded-lg shadow-[#77edff5a] shadow-lg  "
           muted
           autoPlay
+          loop
         >
           <source src="summary.mp4" type="video/mp4" />
           Your browser does not support the video tag.
