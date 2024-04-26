@@ -214,6 +214,8 @@ export default function Home() {
           muted
           autoPlay
           loop
+          defaultMuted
+          playsinline
         >
           <source src="summary.mp4" type="video/mp4" />
           Your browser does not support the video tag.
