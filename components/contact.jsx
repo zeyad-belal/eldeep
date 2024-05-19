@@ -15,7 +15,6 @@ export default function Contact() {
   };
 
   return (
-    <>
       <div className=" overflow-hidden min-h-[450px] justify-center mx-auto  px-3 md:px-6 lg:px-12 lg:mx-6 mt-6">
         <div className="px-8">
           <h2 className="text-xl mb-8 "> CONTACT ME: </h2>
@@ -94,6 +93,5 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
   );
 }

@@ -23,7 +23,7 @@ export default function Home() {
         >
           <div className="flex flex-col gap-2 w-full">
             <RotatingText />
-            <p className="text-3xl md:text-4xl lg:text-6xl ">with 3D Design.</p>
+            <p className="text-3xl md:text-4xl lg:text-6xl text-white">with 3D Design.</p>
             <p
               className="flex items-center gap-4 mt-12 text-lg cursor-pointer hover:bg-white hover:bg-opacity-20 w-fit px-1 rounded py-2"
               onClick={() => setModalOpen(true)}
@@ -37,7 +37,7 @@ export default function Home() {
               >
                 <path d="M25 10 L75 50 L25 90 V10" fill="white" />
               </svg>
-              Check out my work
+              <span className="text-white"> Check out my work </span>
             </p>
 
             {modalOpen && (
@@ -69,7 +69,7 @@ export default function Home() {
               </div>
             )}
 
-            <p className="mt-12 max-w-[300px] text-lg tracking-wider font-thin">
+            <p className="mt-12 max-w-[300px] text-lg tracking-wider font-thin text-white">
               High-Quality 3D Renders and animations for your brand.
             </p>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
       <SecDivider />
       <div
         id="services"
-        className="  min-h-[250px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
+        className="min-h-[250px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 hidden sm:flex flex-col justify-center items-center"
       >
         <h4 className=" w-fit mx-auto text-lg font-thin tracking-widest  mb-4 ">
           Quick Look ?
@@ -254,7 +254,7 @@ export default function Home() {
         id="experince"
         className="  min-h-[400px] px-3 md:px-6 lg:px-12 mx-2 lg:mx-6 flex flex-col justify-center items-center"
       >
-        <h2 className="text-xl self-start uppercase"> experince:</h2>
+        <h2 className="text-xl self-start uppercase"> experience:</h2>
         <ul className="w-full flex md:flex-nowrap flex-wrap gap-6 justify-around items-center py-12 px-4 sm:px-6">
           <li className="flex flex-col  justify-center items-center gap-4 text-sm sm:text-lg px-6 py-4">
             <p className="mx-auto font-semibold w-fit mb-3 text-4xl sm:text-6xl lg:text-7xl">

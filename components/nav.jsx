@@ -21,22 +21,22 @@ const Nav = () => {
         </div>
         <ul className="hidden md:flex space-x-12 ">
           <li>
-            <Link href="#heroSec" className="hover:text-gray-300">
+            <Link href="#heroSec" className="hover:text-gray-300 text-white">
               Home
             </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-gray-300">
+            <a href="#about" className="hover:text-gray-300 text-white">
               About
             </a>
           </li>
           <li>
-            <a href="#services" className="hover:text-gray-300">
+            <a href="#services" className="hover:text-gray-300 text-white">
               Services
             </a>
           </li>
           <li>
-            <a href="#portfolio" className="hover:text-gray-300">
+            <a href="#portfolio" className="hover:text-gray-300 text-white">
               Portfolio
             </a>
           </li>
@@ -65,22 +65,22 @@ const Nav = () => {
             <div className=" absolute right-0 top-12 mt-3 w-48 bg-black text-white rounded-sm border py-2  border-white border-opacity-20">
               <ul className="py-2 px-4 space-y-4">
                 <li>
-                  <Link href="#heroSec" className="hover:text-gray-300">
+                  <Link href="#heroSec" className="hover:text-gray-300 text-white">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <a href="#about" className="hover:text-gray-300">
+                  <a href="#about" className="hover:text-gray-300 text-white">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-gray-300">
+                  <a href="#services" className="hover:text-gray-300 text-white">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#portfolio" className="hover:text-gray-300">
+                  <a href="#portfolio" className="hover:text-gray-300 text-white">
                     Portfolio
                   </a>
                 </li>
